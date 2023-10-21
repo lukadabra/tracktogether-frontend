@@ -21,10 +21,8 @@ import * as reactRouterDom from "react-router-dom";
 SuperTokens.init({
     appInfo: {
         appName: "track-together",
-        apiDomain: "http://localhost:5173",
-        websiteDomain: "http://localhost:5173",
-        apiBasePath: "/auth",
-        websiteBasePath: "/login"
+        apiDomain: "https://tracktogetherbackend-fbb1--5000--1f9496ab.local-credentialless.webcontainer.io",
+        websiteDomain: "https://tracktogetherfrontend-oysd--5173--1f9496ab.local-credentialless.webcontainer.io",
     },
     recipeList: [
         ThirdParty.init({
@@ -40,6 +38,7 @@ SuperTokens.init({
                     buttonComponent: (props: {name: string}) => <div style={{
                         cursor: "pointer",
                         border: "1",
+                        backgroundColor: "#333",
                         paddingTop: "5px",
                         paddingBottom: "5px",
                         borderRadius: "5px",
@@ -57,6 +56,7 @@ SuperTokens.init({
                         cursor: "pointer",
                         border: "1",
                         paddingTop: "5px",
+                        backgroundColor: "#333",
                         paddingBottom: "5px",
                         borderRadius: "5px",
                         borderStyle: "solid"
