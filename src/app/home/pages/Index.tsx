@@ -1,11 +1,9 @@
-import { useContext } from "react";
-import { ThemeContext } from "../../theme/contexts/ThemeContext";
+import Navbar from "../../common/components/navbar";
 
 export default function Home() {
-  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <>
-      <button onClick={toggleTheme}>Changer le theme</button>
+      <Navbar />
       <h1>Home</h1>
     </>
   );

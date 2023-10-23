@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme: toggleTheme }}>
-        <div className='bg-slate-900'>
+        <div className='dark:bg-slate-900 bg-slate-500'>
           <RouterProvider router={Routes} />
         </div>
       </ThemeContext.Provider>
