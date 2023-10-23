@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 
 // pages
-import Home from "../features/home/pages/Index";
-import Login from "../features/auth/pages/Login";
+import Home from "../app/home/pages/Index";
+import Login from "../app/auth/pages/Login";
 
 export const Routes = createBrowserRouter([
     {
