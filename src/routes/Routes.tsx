@@ -1,16 +1,33 @@
-import { createBrowserRouter } from "react-router-dom";
+import { RouteObject, createBrowserRouter } from "react-router-dom";
 
 // pages
 import Home from "../app/home/pages/Index";
 import Login from "../app/auth/pages/Login";
 
-export const Routes = createBrowserRouter([
+// Layouts
+import AppLayout from '../app/common/layouts/AppLayout';
+import SignedOutLayout from '../app/common/layouts/SignedOutLayout'
+
+export const Routes = [
     {
-        path:"/",
-        element: <Home />
+        element: <AppLayout />,
+        children:[
+            {
+                path:"/",
+                element: <Home />
+            }
+        ]
     },
     {
-        path:"/login",
-        element: <Login />
+        element: <SignedOutLayout />,
+        children:[
+            {
+                path:"/login",
+                element: <Login />
+            }
+        ]
     }
-]);
+]
+
+
+export const Router = createBrowserRouter(Routes);

@@ -1,10 +1,13 @@
-import Navbar from "../../common/components/navbar";
+import { Container } from '../../common/components/Container'
+import PageTitle from '../../common/components/PageTitle'
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <h1>Home</h1>
+      <PageTitle title="Home" />
+      <Container>
+        <h1>Home</h1>
+      </Container>
     </>
-  );
+  )
 }

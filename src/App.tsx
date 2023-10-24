@@ -2,7 +2,7 @@
 import './app.css';
 
 import { RouterProvider } from "react-router-dom";
-import { Routes } from "./routes/Routes";
+import { Router } from "./routes/Routes";
 
 // contexts
 import { ThemeContext } from "./app/theme/contexts/ThemeContext";
@@ -17,9 +17,7 @@ function App() {
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme: toggleTheme }}>
-        <div className='dark:bg-slate-900 bg-slate-500'>
-          <RouterProvider router={Routes} />
-        </div>
+        <RouterProvider router={Router} />
       </ThemeContext.Provider>
     </>
   );
