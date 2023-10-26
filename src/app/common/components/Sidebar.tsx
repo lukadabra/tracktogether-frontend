@@ -19,6 +19,7 @@ export default function Sidebar() {
               </div>
               <NavLink className={`px-4 py-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded`} to="/">Home</NavLink>
               <NavLink className={`px-4 py-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded`} to="/login">Login</NavLink>
+              <NavLink className={`px-4 py-2 hover:bg-slate-200 dark:hover:bg-slate-800 rounded`} to="/login">logout</NavLink>
             </div>
           </nav>
         </aside>

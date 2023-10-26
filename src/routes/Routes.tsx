@@ -15,6 +15,12 @@ export const Routes = [
             {
                 path:"/",
                 element: <Home />
+            },
+            {
+                path:"/logout",
+                action: () => {
+                    window.open(`${import.meta.env.VITE_BACKEND_API_URL}/auth/logout`,'_self');
+                }
             }
         ]
     },

@@ -5,7 +5,7 @@ import { Theme } from "../types/index";
 
 export const ThemeProvider = () => {
     const [theme, setTheme] = useState({
-        theme: localStorage.getItem('theme') as Theme || 'light'
+        theme: localStorage.getItem('theme') as Theme || 'dark'
     });
 
     const toggleTheme = () => {
